@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/*======================total=======================*/
+*{margin:0;padding:0;}
+ul{list-style-type: none;} /*목록 점 빼는거*/
+a, a:link{text-decoration: none; color:inherit;}
+body{color:#333;}
+/*======================header=======================*/
+header{
+	border-top : 2px solid black;
+	background: #F6F5EF;
+	height: 180px;
+	overflow: hidden;
+}
+/*======================wrap=======================*/
+.wrap{
+	max-width: 1050px;
+	margin:0 auto;  /*가운데 정렬*/
+	padding: 1.2rem 0;
+	display: flex;
+	justify-content: space-between; /* OR site-nav {margin-left:auto}*/
+}
+/*======================nav-top=======================*/
+.nav-top{margin:2rem 0;}
+.nav-top a:hover{text-decoration: underline;}
+.nav-top, .nav-bottom{display:flex;}
+.nav-top a{ text-transform: capitalize; /*첫 글자만 대문자*/ }
+.nav-top li::after{ content:''; display: inline-block; width: 1px; height: 50%; background:#ccc;
+					margin: 0 .925rem;}  	/* 메뉴 사이에 | 넣기*/
+.nav-top li:nth-child(4)::after{width:0; }
+.nav-top li:nth-child(5)::after{width:0; }
+/*======================nav-bottom=======================*/
+.nav-bottom li:hover{ background: #2C2A29; color: #679821;
+						text-decoration: underline;height: 80px;}
+.nav-bottom a{ text-transform: uppercase; display:block;
+			padding:.5rem 1rem; margin:.2rem 0 0 0;			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
