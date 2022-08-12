@@ -32,6 +32,19 @@ header{
 	margin: 0 .925rem;}  	/* 메뉴 사이에 | 넣기*/
 .nav-top li:nth-child(4)::after{width:0; }
 .nav-top li:nth-child(5)::after{width:0; }
+.nav-top li:nth-last-child(1)	{position: relative;}
+/*======================search&button=======================*/
+[type=search]{
+	width: 30px;
+	height: 30px;
+}
+[type=image]{
+	position: absolute;
+	top:5px;
+	left:5px;
+}
+
+
 
 /*======================nav-bottom=======================*/
 
