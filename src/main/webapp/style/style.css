@@ -165,8 +165,7 @@ header{
 /*======================new-beans=======================*/
 .new-beans{
 	padding: 3rem 0 ;
-	background: gray;
-	/*background: url("images/2022_Summer2_bean_bg.png") no-repeat center / cover;*/
+	background: url("../images/2022_Summer2_bean_bg.jpg") no-repeat center / cover;
 	}
 .new-beans .wrp{justify-content: space-between;}
 .beans-text{color:white;margin: 0 2.5rem 0 0; letter-spacing: -2px;/*자간*/
