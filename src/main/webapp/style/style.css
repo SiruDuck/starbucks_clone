@@ -35,6 +35,8 @@ header{
 .nav-top li:nth-child(5)::after{width:0; }
 .nav-top li:nth-last-child(1)	{position: relative;}
 /*======================search&button=======================*/
+.site-nav, .nav-bottom{font-size: .9rem;}
+
 [type=search]{
 	width: 30px;
 	height: 30px;
@@ -73,7 +75,7 @@ header{
 	column-gap: 2rem; 		/* 아이템들 사이에 빈틈 생성*/
 }
 .b1{align-self: center;/*세로 중앙*/ }
-	.more{border: 1px solid white; border-radius: 3px; color:white;
+	.more{border: 2px solid white; border-radius: 3px; color:white;
 	width:35%;margin:2rem auto;text-align: center; padding: .5rem;font-size: .725rem;}
 	
 	.more:hover{background: white; color:#C2D52E; text-decoration: underline;
@@ -196,9 +198,187 @@ header{
 .beans-text .more:hover{	/* p.more vs p .more 차이 */
 	color:#085452;	
 }
+/*======================리저브 bg=======================*/
+.reserve-bg{
+	height: 400px;
+	background: url("../images/reserve_2022_indonesia_leaf1.png")no-repeat left bottom,
+			url("../images/reserve_2022_indonesia_leaf2.png")no-repeat right bottom, /*130%이렇게해두댐*/
+			url("../images/reserve_2022_indonesia_visual3.png") no-repeat right bottom,
+			url("../images/reserve_2022_indonesia_visual_bg.jpg") no-repeat center/cover;
+}
+.reserve-text .more{
+	border: 2px solid #BC8645;
+	color:#BC8645;
+}
+
+.reserve-text .more:hover{
+	background:#b9813e;
+	color: white;
+}
+.reserve-text{
+	margin: 4rem 0 0 0;
+}
+/*======================favorite bg=======================*/
+
+.favorite-bg{
+	height: 700px;
+	background: url("../images/fav_prod_bg_new.jpg") no-repeat fixed center / cover;
+	/*background-attachment: fixed;*/
+}
+.favorite .wrap{
+	height: 700px;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 2rem;
+}
+.favorite-text{
+	text-align: right;
+}
+.favorite-text .more{
+	margin-right: 2px;
+}
+.favorite-img{
+	width: 70%;
+}
+.favorite-img img{
+	width: 100%;
+	object-fit : cover;
+}
+
+.favorite-text .more{
+	border: 2px solid #ffffff;
+	color:#000000;
+}
+
+.favorite-text .more:hover{
+	border: 2px solid  #ffffff ;
+	background:#ffffff;
+	color: #000000;
+}
+/*======================mobile=======================*/
+.magazine-bg{
+	height:400px;
+	background: url("../images/reserve_bg_pc.png") no-repeat 0 20% / contain;
+}
+.magazine-wrap{
+	justify-content: space-between;
+}
+.magazine-text{
+	margin :  2rem 0 0 0;
+}
+.magazine-text .more{
+	border: 2px solid black;
+	color:black;
+	width: 25%;
+	margin: 2rem 0 2rem 50%;
+}
+.magazine-text .more:hover{
+	background: black;
+	color: white;
+}
+.magazine-img {
+	
+	width:30%;
+	}
+.magazine-img img {
+	
+	width:100%; object-fit:cover;
+	}
+/*======================place=======================*/
+.place{
+	height:400px;
+	background: url("../images/store_exp_img03.png") no-repeat center -20%,
+	url("../images/store_bg.jpg") no-repeat center / cover;
+}
+.place .wrap{
+	padding-top: 0;
+}
+.place-img{
+	width:450px;
+	height:380px;
+	order:0;
+	background: url("../images/store_exp_img01.png") no-repeat right bottom,
+	url("../images/store_exp_img02.png") no-repeat;
+}
+.place-text{
+	order:1;
+	align-self: flex-end;
+	margin-left: 2rem;
+}
+.place-text .more{
+	margin:2rem 0 2rem 52%;
+	border: 2px solid black;
+	color:black;
+}
+.place-text .more:hover{
+	color:white;
+	background: black;
+}
+
+/*======================mobile=======================*/
+footer{ background: #2C2A29 ; color:#e8e8e8; }
+footer > .wrap:nth-child(1){
+	background: url("../images/footer_logo.png") no-repeat right center;
+}
+.xnb { 
+	width:90%; 
+	display: flex; 
+	justify-content: space-between; 
+	font-size: .8rem;
+	line-height: 1.8; /* 위아래 사이 간격*/
+	}
+.xnb > li > a {
+	text-transform: uppercase;
+	}
+.wrap-wide{background: #282828;}
+.records{display: flex; }
+
+.block{
+	display: block;	
+}
+.links{
+	display: flex;
+	color:white;
+	font-size:.75rem;
+	justify-content: center;
+}
+.links > li::after{
+	content: '';
+	display: inline-block;
+	width: 1px;
+	height: 100%;
+	background: gray;
+	margin: 0 5px;
+	position: relative;
+	top:2px;
+}
+.links> li:nth-last-child(1)::after{
+	display: none;
+}
+.hypertext{
+	display: flex;
+	margin: 1rem 0 ;
+	justify-content: center;
+	column-gap: 1rem;
+}
+.hypertext > li a{
+	border : 2px solid white;
+	border-radius: 3px;
+	padding : 5px 10px;
+	color: white;
+	font-size: .725rem;
+}
+.hypertext > li a:hover{
+	text-decoration: underline;
+}
 
 
-
+.info{
+	font-size:.725rem;
+	text-align:center;
+	color: #939393;
+	line-height: 2
+}
 /*======================mobile=======================*/
 @media screen and (max-width: 480px){
 	html{font-size: 16px;}
